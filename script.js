@@ -6,10 +6,10 @@ function drop(){
     ham.classList.toggle('showburger')
     ash.classList.toggle('show-link')
 
-    if (ham.className == 'hamburger showburger') {
-        setTimeout(()=>{
-            ham.classList.remove('showburger')
-            ash.classList.remove('show-link')
-        }, 10000)
-    }
+    // if (ham.className == 'hamburger showburger') {
+    //     setTimeout(()=>{
+    //         ham.classList.remove('showburger')
+    //         ash.classList.remove('show-link')
+    //     }, 10000)
+    // }
 }
