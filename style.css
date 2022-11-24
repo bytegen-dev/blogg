@@ -8,6 +8,11 @@ body{
     min-height: 100vh;
     font-family: sans-serif;
     -webkit-tap-highlight-color: transparent;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar{
+    width: 0;
 }
 
 .nav-bar{
@@ -356,10 +361,11 @@ body{
     transform: rotate(-45deg);
     transition: all 0.7s ease;
     padding: 10px;
+    cursor: pointer;
 }
 
 .share:hover{
-    scale: 1.5;
+    scale: 1.2;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.616);
 }
 
