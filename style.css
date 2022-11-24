@@ -1,0 +1,377 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    font-family: sans-serif;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.nav-bar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 1);
+    color: #333;
+    width: 100vw;
+    height: 10vh;
+    padding: 15px 5vw;
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* backdrop-filter: blur(5px); */
+    /* background: #fff; */
+    z-index: 1;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.184);
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logoimage{
+    background: #252525;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    padding: 9px;
+    border-radius: 15px;
+}
+
+.logoimage img{
+    margin-left: 2.4px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo span{
+    font-size: 25px;
+    font-weight: 550;
+    margin-left: 3vw;
+}
+
+.hamburger{
+    width: 55px;
+    height: 55px;
+    background: #252525;
+    border-radius: 50%;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    padding: 12.5px;
+}
+
+.menu{
+    position: relative;
+    width: 100%;
+    height: 3.5px;
+    background: #fff;
+    border-radius: 5px;
+}
+
+.menu::before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 3.5px;
+    background-color: #fff;
+    border-radius: 5px;
+    top: -10px;
+}
+
+.menu::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 3.5px;
+    background-color: #fff;
+    border-radius: 5px;
+    top: 10px;
+}
+
+
+
+.container{
+    margin: 10vh 0 0 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.pager{
+    background: rgba(61, 61, 255, 0.9);
+    width: 100%;
+    color: #fff;
+    /* border: 2px solid red; */
+    padding: 35px 20px 30px 20px;
+}
+
+
+.pager h1{
+    margin-bottom: 13px;
+    cursor: pointer;
+    font-size: 25px;
+}
+
+.pager span{
+    font-size: 25px;
+    color: rgba(255, 255, 255, 0.476);
+    cursor: pointer;
+    /* margin-bottom: 20px; */
+    /* opacity: 0.6; */
+}
+
+
+.search{
+    width: 100%;
+    height: 60px;
+    background: #fff;
+    border: 2.5px solid white;
+    border-radius: 15px;
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    overflow: hidden;
+}
+
+.find{
+    background: rgba(0, 0, 255, 0.68);
+    height: 100%;
+    width: 83%;
+    /* min-width: ; */
+    border: 0;
+    display: flex;
+    align-items: center; 
+    padding: 10px 25px 6px 25px;
+    color: #fff;
+    font-size: 20px;
+
+}
+
+.find::placeholder{
+    color: #fff;
+    opacity: 0.9;
+    font-size: 22px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.search-btn{
+    background: #fff;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100%; */
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 17px;
+    opacity: 0.8;
+    transition: all 0.5s ease;
+    /* height: 100%; */
+}
+
+.search-btn:hover{
+    opacity: 1;
+}
+
+.search-btn img{
+    width: 100%;
+}
+
+
+.blog{
+    padding: 40px 30px;
+}
+
+.item{
+    /* border: 2px solid red; */
+    margin-bottom: 20px;
+}
+
+.article-info{
+    /* border: 1px solid green ; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.type{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.7;
+}
+
+.type img{
+    width: 25px;
+    margin-right: 7px;
+}
+
+.time{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.time img{
+    width: 20px;
+    opacity: 0.55;
+    margin-right: 8px;
+}
+
+.time span{
+    color: #555;
+}
+
+
+.title{
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.title h1{
+    color: #444;
+    margin-bottom: 5px;
+}
+
+.title small{
+    opacity: 0.6;
+    font-size: 14px;
+}
+
+.author{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px;
+}
+
+.author-image{
+    width: 50px;
+    cursor: pointer;
+}
+
+.author-image img{
+    width: 100%;
+}
+
+.author-name{
+    opacity: 0.8;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.author-name:hover{
+    color: rebeccapurple;
+    opacity: 1;
+}
+
+.article{
+    /* border: 2px solid green; */
+    text-align: left;
+}
+
+.article p{
+    font-size: 18px;
+    line-height: 26px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+
+.article h3{
+    font-size: 25px;
+    color: #333;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.charis{
+    overflow: hidden;
+    margin: 50px 0 30px 0;
+}
+
+.charis img{
+    width: 100%;
+}
+
+.charisi img{
+    border-radius: 15px;
+}
+
+.charisii img{
+    border-bottom-left-radius: 50px;
+}
+
+
+
+.footer{
+    /* border: 2px solid green; */
+    padding: 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.social{
+    width: 50px;
+    height: 50px;
+    margin-bottom: 20px;
+    padding: 5px;
+    transition: all 0.5s ease;
+    border-radius: 50%;
+    border: 3px solid transparent;
+}
+
+.social:hover{
+    border: 3px solid rgba(0, 0, 0, 0.35);
+}
+
+.social img{
+    width: 100%;
+}
+
+
+
+
+
+.share{
+    background: #252525;
+    position: fixed;
+    bottom: -80px;
+    left: -80px;
+    width: 38vw;
+    height: 38vw;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    transform: rotate(-45deg);
+    transition: all 0.7s ease;
+    
+}
+
+.shareit{
+    position: fixed;
+    width: 35px;
+    height: 35px;
+    /* transform: rotate(45deg); */
+    bottom: 6px;
+    left: 4px;
+    z-index: 1;
+    /* right: 1px; */
+}
+
+.share:hover{
+    scale: 1.5;
+}
