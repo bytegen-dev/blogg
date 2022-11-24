@@ -466,7 +466,7 @@ html{
 }
 
 .author-name{
-    opacity: 0.7;
+    opacity: 0.755;
     cursor: pointer;
     transition: all 0.5s ease;
 }
