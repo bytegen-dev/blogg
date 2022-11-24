@@ -476,6 +476,22 @@ html{
     opacity: 1;
 }
 
+.credit span{
+    margin-right: 20px;
+    font-weight: bolder;
+    color: #333;
+}
+
+.credit a{
+    font-size: 15px;
+    color: #707;
+    transition: all 0.5s ease;
+}
+
+.credit a:hover{
+    color: blue;
+}
+
 .article{
     /* border: 2px solid green; */
     text-align: left;
