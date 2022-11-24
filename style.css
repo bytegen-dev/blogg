@@ -202,24 +202,6 @@ html{
     transition: all 0.7s ease;
 }
 
-.home:hover{
-    animation: collorr;
-    animation-timing-function: ease;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-    animation-iteration-count: 1;
-    /* transition: all 0.7s ease; */
-}
-
-@keyframes collorr {
-    0%{
-        opacity: 0.1;
-    }
-
-    100%{
-        opacity: 1;
-    }
-}
 
 .close{
     opacity: 0.2;
@@ -231,23 +213,6 @@ html{
 
 }
 
-.close:hover{
-    animation: collor;
-    animation-timing-function: ease;
-    animation-duration: 0.5s;
-    animation-fill-mode: forwards;
-    animation-iteration-count: 1;
-}
-
-@keyframes collor {
-    0%{
-        background-color: rgba(255, 255, 255, 0.313);
-    }
-
-    100%{
-        background-color: transparent;
-    }
-}
 
 .home img, .close img{
     width: 100%;
@@ -260,8 +225,8 @@ html{
         width: 200px;
         right: 90px;
     }
-
-
+    
+    
 }
 
 
@@ -280,6 +245,43 @@ html{
     .close{
         position: relative;
         right: -10px;
+    }
+    
+    .home:hover{
+        animation: collorr;
+        animation-timing-function: ease;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+        animation-iteration-count: 1;
+        /* transition: all 0.7s ease; */
+    }
+    
+    @keyframes collorr {
+        0%{
+            opacity: 0.1;
+        }
+    
+        100%{
+            opacity: 1;
+        }
+    }
+    
+    .close:hover{
+        animation: collor;
+        animation-timing-function: ease;
+        animation-duration: 0.5s;
+        animation-fill-mode: forwards;
+        animation-iteration-count: 1;
+    }
+    
+    @keyframes collor {
+        0%{
+            background-color: rgba(255, 255, 255, 0.313);
+        }
+    
+        100%{
+            background-color: transparent;
+        }
     }
 }
 
