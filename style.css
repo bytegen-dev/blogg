@@ -21,6 +21,10 @@ body{
     animation-iteration-count: 1;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 @media screen and (max-width: 300px) {
     body{
         display: none;
@@ -107,9 +111,9 @@ body{
 }
 
 .menu{
-    position: absolute;
+    position: relative;
     width: 26px;
-    height: 3.5px;
+    height: 3.7px;
     background: #fff;
     border-radius: 5px;
     z-index: 2;
@@ -120,7 +124,7 @@ body{
     position: absolute;
     content: "";
     width: 100%;
-    height: 3.5px;
+    height: 100%;
     background-color: #fff;
     border-radius: 5px;
     top: -10px;
@@ -133,7 +137,7 @@ body{
     position: absolute;
     content: "";
     width: 100%;
-    height: 3.5px;
+    height: 100%;
     background-color: #fff;
     border-radius: 5px;
     top: 10px;
@@ -195,13 +199,54 @@ body{
 .home{
     width: 50px;
     padding: 10px;
+    transition: all 0.7s ease;
+}
+
+.home:hover{
+    animation: collorr;
+    animation-timing-function: ease;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    /* transition: all 0.7s ease; */
+}
+
+@keyframes collorr {
+    0%{
+        opacity: 0.1;
+    }
+
+    100%{
+        opacity: 1;
+    }
 }
 
 .close{
-    opacity: 0.15;
+    opacity: 0.2;
     width: 50px;
     padding: 14px;
     transform: rotate(180deg);
+    border-radius: 50%;
+    transition: all 0.7s ease;
+
+}
+
+.close:hover{
+    animation: collor;
+    animation-timing-function: ease;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+}
+
+@keyframes collor {
+    0%{
+        background-color: rgba(255, 255, 255, 0.313);
+    }
+
+    100%{
+        background-color: transparent;
+    }
 }
 
 .home img, .close img{
@@ -213,7 +258,7 @@ body{
     
     .show-link{
         width: 200px;
-        right: 65px;
+        right: 90px;
     }
 
 
@@ -326,6 +371,7 @@ body{
     padding: 17px;
     opacity: 0.8;
     transition: all 0.5s ease;
+    cursor: pointer;
     /* height: 100%; */
 }
 
@@ -353,6 +399,7 @@ body{
     align-items: center;
     justify-content: space-between;
     margin-bottom: 25px;
+    cursor: default;
 }
 
 .type{
@@ -508,7 +555,7 @@ body{
 
 
 .share{
-    background: #252525;
+    background: #222;
     position: fixed;
     bottom: -75px;
     left: -75px;
