@@ -349,10 +349,10 @@ body{
 .share{
     background: #252525;
     position: fixed;
-    bottom: -80px;
-    left: -80px;
-    width: 38vw;
-    height: 38vw;
+    bottom: -75px;
+    left: -75px;
+    width: 150px;
+    height: 150px;
     /* display: flex;
     justify-content: center;
     align-items: center; */
@@ -366,8 +366,8 @@ body{
     width: 30px;
     height: 30px;
     /* transform: rotate(45deg); */
-    bottom: 6px;
-    left: 4px;
+    bottom: 10px;
+    left: 10px;
     z-index: 1;
     /* right: 1px; */
 }
