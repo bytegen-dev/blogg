@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: cartoon;
+    src: url(./font/cartoon.ttf);
+}
+
 body{
     min-height: 100vh;
     font-family: sans-serif;
@@ -59,7 +64,8 @@ body{
 }
 
 .logo span{
-    font-size: 25px;
+    font-family: cartoon;
+    font-size: 30px;
     font-weight: 550;
     margin-left: 3vw;
 }
