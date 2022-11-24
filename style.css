@@ -120,6 +120,10 @@ body{
     top: 10px;
 }
 
+.nav-bar a{
+    text-decoration: none;
+    color: #333;
+}
 
 
 .container{
