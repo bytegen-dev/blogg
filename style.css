@@ -339,7 +339,7 @@ body{
 
 
 .blog{
-    padding: 40px 30px;
+    padding: 40px 30px 10px 30px;
 }
 
 .item{
@@ -476,19 +476,31 @@ body{
 .social{
     width: 50px;
     height: 50px;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     padding: 5px;
     transition: all 0.5s ease;
     border-radius: 50%;
     border: 3px solid transparent;
-}
-
-.social:hover{
-    border: 3px solid rgba(0, 0, 0, 0.35);
+    background: rgb(71, 159, 227);
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
 }
 
 .social img{
+    transition: all 1s ease;
     width: 100%;
+
+}
+
+.social:hover{
+    /* border: 3px solid rgba(0, 0, 0, 0.35); */
+    scale: 1.12;
+}
+
+
+.pinterest{
+    background: rgb(199, 0, 0);
+    margin-bottom: 20px;
+    padding: 0;
 }
 
 
