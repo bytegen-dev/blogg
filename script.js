@@ -13,3 +13,10 @@ function drop(){
     //     }, 10000)
     // }
 }
+
+var shs = document.querySelector('.share')
+var sshhss = document.querySelector('.ss')
+
+function shareto(){
+    shs.classList.toggle('rottate')
+}
